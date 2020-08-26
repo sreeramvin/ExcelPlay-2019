@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {FunctionComponent} from 'react';
 import './KryptosInfoBar.scss';
 
-const KryptosInfoBar = props => {
+type Props = {
+  level : any
+  rank : any
+}
+
+const KryptosInfoBar: FunctionComponent<Props> = (props) => {
   const { level, rank } = props;
   return (
     <div className="wrapper">

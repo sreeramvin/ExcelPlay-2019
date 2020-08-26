@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{FunctionComponent}from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { GameHeader, MItem } from '../common/GameHeader/GameHeader';
 import withLogin from '../HOC/withLogin';
@@ -8,7 +8,11 @@ import KryptosPlay from './KryptosPlay/KryptosPlay';
 import KryptosRules from './KryptosRules/KryptosRules';
 import KryptosRanklist from './KryptosRanklist/KryptosRanklist';
 
-const Kryptos = props => {
+type Props = {
+  match:any
+}
+
+const Kryptos: FunctionComponent<Props> = (props) => {
   const { match } = props;
   return (
     <div>

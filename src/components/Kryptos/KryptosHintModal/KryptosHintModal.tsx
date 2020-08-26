@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {FunctionComponent} from 'react';
 import './KryptosHintModal.scss';
+import { any } from 'prop-types';
 
-const KryptosHintModal = props => {
+type Props = {
+  hintText: any
+}
+
+const KryptosHintModal : FunctionComponent<Props> = (props) => {
   const { hintText } = props;
 
   const hints = () => {

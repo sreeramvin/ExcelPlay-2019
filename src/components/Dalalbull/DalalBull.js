@@ -5,7 +5,7 @@ import DalalbullPortfolio from './DalalbullPortfolio/DalalbullPortfolio';
 import DalalbullPlay from './DalalbullPlay/DalalbullPlay';
 import DalalbullRules from './DalalbullRules/DalalbullRules';
 import DalalbullRanklist from './DalalbullRanklist/DalalbullRanklist';
-import withLogin from '../HOC/withLogin';
+//import withLogin from '../HOC/withLogin';
 import { handshake } from './DalalbullComponents/apicalls/apicalls';
 import './DalalBull.scss';
 
@@ -36,4 +36,4 @@ const Dalalbull = props => {
   );
 };
 
-export default withLogin(Dalalbull);
+export default (Dalalbull);

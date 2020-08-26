@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, FunctionComponent} from 'react';
 import './KryptosQuestion.scss';
 import { IMAGE_FAILED_TO_LOAD } from '../../common/Constants';
 
-const KryptosQuestion = props => {
+type Props = {
+  imgUrl:any
+  sourceHint: any
+  onSubmit: any
+}
+
+const KryptosQuestion: FunctionComponent<Props> = (props) => {
   const [text, setText] = useState('');
   const { imgUrl, sourceHint, onSubmit } = props;
 
